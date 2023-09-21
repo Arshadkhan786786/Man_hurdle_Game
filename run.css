@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+    
+}
+
+.background{
+    background-image: url(backgrnd.jpg);
+    background-size: 80vw 100vh;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.man{
+    background-image: url(man.png);
+    background-size: cover;
+    width: 700px;
+    height: 130px;
+    position: absolute;
+    bottom:0;
+    left: 52px;
+}
+
+.hurdle{
+    width: 550px;
+    height: 150px;
+    background-image: url(hurdle.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+    
+}
+
+.manrun{
+    animation: man 0.7s linear;
+}
+
+.hurdlerun1{
+    animation: hurdlerun1 3.5s  ease-in-out infinite;
+}
+
+.heading{
+    top:63px;
+    font-size: 53px;
+    text-align: center; 
+    color: yellow;
+}
+@keyframes man{
+    0%{
+        bottom: 0px;
+    }
+
+    50%{
+        bottom: 250px;
+    }
+    100%{
+        bottom: 0px; 
+    }
+}
+
+@keyframes hurdlerun1{
+    0%{
+        left: 200vw;
+    }
+    100%{
+        left: -30vw;
+    }
+}
+
+
+.gameover{
+    color: lime;
+    text-align: center;
+    font-size: 50px;
+}
+
+.time{
+    color: rgb(0, 255, 213);
+    text-align: center;
+    font-size: 30px;
+}
